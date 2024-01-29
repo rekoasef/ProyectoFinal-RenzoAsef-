@@ -1,5 +1,4 @@
 import carrito from '../assets/cart-fill.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CartWidget = () => {
     return (

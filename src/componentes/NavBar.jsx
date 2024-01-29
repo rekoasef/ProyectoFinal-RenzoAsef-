@@ -26,9 +26,6 @@ const NavBar = () => {
                                             <li><a className="dropdown-item" href="#">Motorola</a></li>
                                         </ul>
                                     </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link text-white m-4" href="#">Parlantes</a>
-                                    </li>
                                 </ul>
                             </div>
                         </div>
