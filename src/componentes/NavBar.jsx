@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
 
@@ -11,20 +12,13 @@ const NavBar = () => {
                             <div className="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul className="navbar-nav">
                                     <div className="nav-item">
-                                        <a className="nav-link text-white m-4" href="#">Televisores</a>
+                                        <NavLink className="nav-link text-white m-4" to={"/category/televisores"}>Televisores</NavLink>
                                     </div>
                                     <li className="nav-item">
-                                        <a className="nav-link text-white m-4" href="#">Computadoras</a>
+                                        <NavLink className="nav-link text-white m-4" to={"/category/computadora"}>Computadoras</NavLink>
                                     </li>
                                     <li className="nav-item dropdown">
-                                        <a className="nav-link dropdown-toggle text-white m-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Celulares
-                                        </a>
-                                        <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="#">Iphone</a></li>
-                                            <li><a className="dropdown-item" href="#">Samsung</a></li>
-                                            <li><a className="dropdown-item" href="#">Motorola</a></li>
-                                        </ul>
+                                        <NavLink className="nav-link text-white m-4" to={"/category/celulares"}>Celulares</NavLink>
                                     </li>
                                 </ul>
                             </div>
