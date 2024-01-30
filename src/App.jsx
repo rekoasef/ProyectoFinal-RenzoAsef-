@@ -10,7 +10,6 @@ function App() {
     <>
     <BrowserRouter>
       <Header/>
-      <Carousel/>
       <Routes>
         <Route path={"/"} element={<ItemListContainer/>}/>
         <Route path={"/category/:id"} element={<ItemListContainer/>}/>

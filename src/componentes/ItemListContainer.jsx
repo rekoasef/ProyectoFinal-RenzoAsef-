@@ -3,6 +3,7 @@ import arrayProductos from "./json/productos.json";
 import { useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import Carousel from "./Carousel";
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
@@ -21,6 +22,7 @@ const ItemListContainer = () => {
 
     return (
         <>
+            <Carousel/>
             <ItemList items={items} />
         </>
     )
