@@ -1,3 +1,4 @@
+import Carousel from "./componentes/Carousel";
 import Error404 from "./componentes/Error404";
 import ItemDetailContainer from "./componentes/ItemDetailContainer";
 import ItemListContainer from "./componentes/ItemListContainer"
@@ -9,6 +10,7 @@ function App() {
     <>
     <BrowserRouter>
       <Header/>
+      <Carousel/>
       <Routes>
         <Route path={"/"} element={<ItemListContainer/>}/>
         <Route path={"/category/:id"} element={<ItemListContainer/>}/>
