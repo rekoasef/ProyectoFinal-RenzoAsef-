@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+
 const Imagenes = ({item}) => {
     const estiloComponente = {
         padding: "20px",
