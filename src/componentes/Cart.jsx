@@ -45,17 +45,19 @@ const Cart = () =>{
                         <tbody>
                             {cart.map(product =>
                                 <tr key={product.id}>
-                                    <td><img src={product.imagen} alt={product.titulo} width={80} /></td>
-                                    <td>{product.titulo}</td>
-                                    <td>${product.precio}</td>
-                                    <td>{product.cantidad}</td>
-                                    <td>${product.cantidad * product.precio}</td>
-                                    <td><a href="#" onClick={() => {removeItem(product.id)}}><img src={trash} alt="Eliminar Producto" title="Eliminar Producto"  /></a></td>
+                                    <td className="align-middle"><img src={product.imagen} alt={product.titulo} width={80} /></td>
+                                    <td className="align-middle">{product.titulo}</td>
+                                    <td className="align-middle">${product.precio}</td>
+                                    <td className="align-middle">{product.cantidad}</td>
+                                    <td className="align-middle">${product.cantidad * product.precio}</td>
+                                    <td className="align-middle"><a href="#" onClick={() => {removeItem(product.id)}}><img src={trash} alt="Eliminar Producto" title="Eliminar Producto"  /></a></td>
                                 </tr>
                             )}
                             <tr>
-                                <th colSpan={4}>Suma Total</th>
-                                <th>${TotalPrecioProductos()}</th>
+                                <th><button className="btn btn-secondary" onClick={clearCart}>Limpiar Carrito</button></th>
+                                <th colSpan={4} className="align-middle">Suma Total</th>
+                                <th className="align-middle">${TotalPrecioProductos()}</th>
+                                <td><Link to={"/Checkout"} className="btn btn-secondary">Finalizar compra</Link></td>
                                 <td>&nbsp;</td>
                             </tr>
                         </tbody>
